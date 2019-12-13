@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ToBuy</name>
+    </assembly>
+    <members>
+        <member name="M:ToBuy.Controllers.AnuncioController.ListAds">
+            <summary>
+            Listagem de todos os anúncios
+            </summary>
+            <returns>Retorna ao usuário uma lista com todos anúncios</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.AnuncioController.SearchId(System.Int32)">
+            <summary>
+            Lista de anúncio específico
+            </summary>
+            <param name="id">Recebe o id do anúncio informada</param>
+            <returns>Retorna ao usuário as informações do anúncio informado</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.AnuncioController.ListByPrice(System.Decimal)">
+            <summary>
+            Filtro de preço
+            </summary>
+            <param name="price">Parâmetro recebe o valor de preço</param>
+            <returns>Retorna ao usuário lista de anúncios com o preço informado</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.AnuncioController.ListBySetPrice(System.Decimal,System.Decimal)">
+            <summary>
+            Filtro de preço pré setado
+            </summary>
+            <param name="minPrice">Parâmetro recebe o valor de preço mínimo</param>
+            <param name="maxPrice">Parâmetro recebe o valor de preço máximo</param>
+            <returns>Retorna ao usuário lista de anúncios entre os preços informados</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.AnuncioController.ListBrandAndCondition(System.String,System.String)">
+            <summary>
+            Filtro de conservação do produto e fabricante
+            </summary>
+            <param name="manufacturer">Recebe o fabricante do produto informado</param>
+            <param name="condition">Recebe o estado de conservação do produto informado</param>
+            <returns>Retorna ao usuário os anúncios com as condições de produto e estado de conservação informados</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.AnuncioController.ListByDate">
+            <summary>
+            Filtro de Data
+            </summary>
+            <returns>Retorna ao usuário os anúncios ordenado pela data</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.AnuncioController.SearchField(System.String)">
+            <summary>
+            Filtro de busca
+            </summary>
+            <param name="desiredField">Recebe uma informação como titulo ou palavras que contenham na descrição</param>
+            <returns>Retorna ao usuário os anúncios que possuem aquela palavra ou texto</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.AnuncioController.RegisterAd(ToBuy.Domains.Anuncio)">
+            <summary>
+            Incusão de novo anúncio
+            </summary>
+            <param name="ad">Parâmetro recebe um novo anúncio</param>
+            <returns>Retorna ao usuário os campos para criar um novo anúncio</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.AnuncioController.UpdateAd(System.Int32,ToBuy.Domains.Anuncio)">
+            <summary>
+            Alteração de anúncio específico
+            </summary>
+            <param name="id">Recebe o id específico do anúncio</param>
+            <param name="ad">Recebe as informações que serão alteradas</param>
+            <returns>Retorna ao usuário os campos para alteração de um anúncio</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.AnuncioController.DeleteAd(System.Int32)">
+            <summary>
+            Deleta um anúncio
+            </summary>
+            <param name="id">Recebe o id do anúncio que será deletado</param>
+            <returns>Retorna ao usuário a informação de exclusão</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ConservacaoController.Get">
+            <summary>
+            Listagem de todos os estados de conservação
+            </summary>
+            <returns>Retorna ao usuário todos os estados de conservação</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ConservacaoController.Get(System.Int32)">
+            <summary>
+            Lista de um estado de conservação específico
+            </summary>
+            <param name="id">Recebe o id de um estado de conservação específico</param>
+            <returns>Retorna ao usuário um estado de conservação específico</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ConservacaoController.Post(ToBuy.Domains.Conservacao)">
+            <summary>
+            Inclusão de novo estado de conservação
+            </summary>
+            <param name="conservacao"> Parâmetro recebe um informações do estado de conservação</param>
+            <returns>Retorna ao usuáro os campos para criar um novo estado de conservação</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ConservacaoController.Put(System.Int32,ToBuy.Domains.Conservacao)">
+            <summary>
+            Alteração de um estado de conservação
+            </summary>
+            <param name="id">Parâmetro recebe o id do estado de conservação</param>
+            <param name="conservacao"> Recebe as informações que serão alteradas</param>
+            <returns>Retorna ao usuário os campos para alteração de um estado de conservação</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ConservacaoController.Delete(System.Int32)">
+            <summary>
+            Deleta um estado de conservação
+            </summary>
+            <param name="id">Recebe o id do estado de conservação que será deletado</param>
+            <returns>Retorna ao usuário a informação de exclusão</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.FabricanteController.Get">
+            <summary>
+            Listagem de todos os fabricantes
+            </summary>
+            <returns>Retorna ao usuário uma lista com todos os fabricantes</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.FabricanteController.Get(System.Int32)">
+            <summary>
+            Lista de um fabricante específico
+            </summary>
+            <param name="id"> Recebe o id de um fabricante específico</param>
+            <returns>Retorna ao usuário um fabricante específico</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.FabricanteController.Post(ToBuy.Domains.Fabricante)">
+            <summary>
+            Incusão de novo fabricante
+            </summary>
+            <param name="fabricante"> Parâmetro recebe um novo fabricante</param>
+            <returns>Retorna o novo fabricante inserido</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.FabricanteController.Put(System.Int32,ToBuy.Domains.Fabricante)">
+            <summary>
+            Alteração de um fabricante
+            </summary>
+            <param name="id">Recebe o id d eum fabricante e</param>
+            <param name="fabricante">Recebe as informações que serão alteradas</param>
+            <returns>Retorna ao usuário os campos para alteração de um fabricante</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.FabricanteController.Delete(System.Int32)">
+            <summary>
+            Deleta um fabricante
+            </summary>
+            <param name="id">Recebe o id de um fabricante</param>
+            <returns>Retorna ao usuário a informação de exclusão</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ImagemController.Get">
+            <summary>
+            Lista de todas as imagens
+            </summary>
+            <returns>Retorna as imagens do produto</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ImagemController.Get(System.Int32)">
+            <summary>
+            Retorno de imagem específica
+            </summary>
+            <param name="id">Recebe o id da imagem </param>
+            <returns>Retorna a imagem referente ao id informado</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ImagemController.Post(ToBuy.Domains.Imagem)">
+            <summary>
+            Inclusão de imagem
+            </summary>
+            <param name="imagem">Parâmetro que rececbe uma nova imagem</param>
+            <returns>Retorna os campos para a inserção de imagem</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ImagemController.Put(System.Int32,ToBuy.Domains.Imagem)">
+            <summary>
+            Altera imagem específica
+            </summary>
+            <param name="id">Recebe o id específico de imagem</param>
+            <param name="imagem">Recebe a imagem a ser alterada</param>
+            <returns>Retorna o campo para alteração de imagem</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ImagemController.Delete(System.Int32)">
+            <summary>
+            Deleta uma imagem
+            </summary>
+            <param name="id">Recebe o id da imagem a ser deletada</param>
+            <returns>Retorna a imagem deletada</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.InteresseController.ListInterests">
+            <summary>
+            Listagem de todos os interesses
+            </summary>
+            <returns>Retorna ao usuário todos os interesses</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.InteresseController.SearchInterest(System.Int32)">
+            <summary>
+            Lista de um interesse específico
+            </summary>
+            <param name="id">Recebe o id do interesse informado</param>
+            <returns>Retorna ao usuário as informações de interesse informado</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.InteresseController.RegisterInterest(ToBuy.Domains.Interesse)">
+            <summary>
+            Incusão de um novo interesse
+            </summary>
+            <param name="interesse">Parâmetro recebe um novo interesse</param>
+            <returns>Retorna ao usuário os campos para criar um novo interesse</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.InteresseController.DeleteInterest(System.Int32)">
+            <summary>
+            Deleta um interesse
+            </summary>
+            <param name="id">Recebe o id de interesse que será deletado</param>
+            <returns>Retorna ao usuário a informação de exclusão</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.LoginController.Login(ToBuy.ViewModels.LoginViewModel)">
+            <summary>
+            Efetua o Login do usuário
+            </summary>
+            <param name="login">Parâmetro login para receber o valor do objeto</param>
+            <returns>Retorna Login efetuado</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ProdutoController.ListProducts">
+            <summary>
+            Listagem de todos os produtos
+            </summary>
+            <returns> Retorna ao usuário todos os produtos </returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ProdutoController.SearchProduct(System.Int32)">
+            <summary>
+            Lista de um produto específico
+            </summary>
+            <param name="id">Recebe o id de um produto informado</param>
+            <returns>Retorna ao usuário as informações do produto informado</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ProdutoController.RegisterProduct(ToBuy.Domains.Produto)">
+            <summary>
+            Incusão de novo produto
+            </summary>
+            <param name="produto">Parâmetro recebe um novo produto </param>
+            <returns> Retorna ao usuário os campos para criar um novo produto</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ProdutoController.UpdateProduct(System.Int32,ToBuy.Domains.Produto)">
+            <summary>
+            Alteração de um produto específico
+            </summary>
+            <param name="id">Recebe o id específico do produto</param>
+            <param name="produto">Recebe as informações que serão alteradas</param>
+            <returns>Retorna ao usuário os campos para alteração de um produto</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.ProdutoController.DeleteProduct(System.Int32)">
+            <summary>
+            Deleta um produto
+            </summary>
+            <param name="id">Recebe o id do produto que será deletado</param>
+            <returns>Retorna ao usuário a informação de exclusão</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.TipoUsuarioController.Get">
+            <summary>
+            Listagem de todos os tipos de usuário
+            </summary>
+            <returns>Retorna ao usuário todos os tipos de usuário</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.TipoUsuarioController.Get(System.Int32)">
+            <summary>
+            Lista de um tipo de usuário específico
+            </summary>
+            <param name="id">Recebe o id do tipo de usuário informado</param>
+            <returns>Retorna ao usuário as informações do tipo de usuário informado</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.TipoUsuarioController.Post(ToBuy.Domains.TipoUsuario)">
+            <summary>
+            Incusão de um novo tipo de usuário
+            </summary>
+            <param name="tipo_usuario"> Parâmetro recebe um novo tipo de usuário</param>
+            <returns>Retorna ao usuário os campos para criar um novo tipo de usuário</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.TipoUsuarioController.Put(System.Int32,ToBuy.Domains.TipoUsuario)">
+            <summary>
+            Alteração de um tipo de usuário específico
+            </summary>
+            <param name="id">Recebe o id específico do tipo de usuário</param>
+            <param name="tipo_usuario">Recebe as informações que serão alteradas</param>
+            <returns>Retorna ao usuário os campos para alteração de um tipo de usuário</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.TipoUsuarioController.Delete(System.Int32)">
+            <summary>
+            Deleta um tipo de usuário
+            </summary>
+            <param name="id"> Recebe o id do tipo de usuário que será deletado</param>
+            <returns>Retorna ao usuário a informação de exclusão</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.UsuarioController.ListUsers">
+            <summary>
+            Listagem de todos os usuários
+            </summary>
+            <returns>Retorna ao usuário todos os usuários</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.UsuarioController.SearchUser(System.Int32)">
+            <summary>
+            Lista de um usuário específico
+            </summary>
+            <param name="id">Recebe o id do usuário informado</param>
+            <returns>Retorna ao usuário as informações do usuário informado</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.UsuarioController.RegisterUser(ToBuy.Domains.Usuario)">
+            <summary>
+            Incusão de um novo usuário
+            </summary>
+            <param name="usuario">Parâmetro recebe um novo usuário</param>
+            <returns>Retorna ao usuário os campos para criar um novo usuário</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.UsuarioController.UpdateUser(System.Int32,ToBuy.Domains.Usuario)">
+            <summary>
+            Alteração de um usuário específico
+            </summary>
+            <param name="id">Recebe o id específico do usuário</param>
+            <param name="usuario">Recebe as informações que serão alteradas</param>
+            <returns>Retorna ao usuário os campos para alteração de um usuário</returns>
+        </member>
+        <member name="M:ToBuy.Controllers.UsuarioController.DeleteUser(System.Int32)">
+            <summary>
+            Deleta um usuário 
+            </summary>
+            <param name="id">Recebe o id do usuário que será deletado</param>
+            <returns>Retorna ao usuário a informação de exclusão</returns>
+        </member>
+        <member name="M:ToBuy.Repositories.UsuarioRepository.AutenticarLogin(ToBuy.ViewModels.LoginViewModel)">
+            <summary>
+            Método privado que valida se um usuário existe no nosso banco de dados
+            </summary>
+            <param name="login">Objeto do tipo usuário</param>
+            <returns>Objeto do tipo usuário</returns>
+        </member>
+    </members>
+</doc>
