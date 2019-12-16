@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Celso\\Desktop\\projeto_back-end\\ToBuy.csproj": {}
+    "C:\\Users\\fic\\Desktop\\ToBuy\\ToBuy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Celso\\Desktop\\projeto_back-end\\ToBuy.csproj": {
+    "C:\\Users\\fic\\Desktop\\ToBuy\\ToBuy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Celso\\Desktop\\projeto_back-end\\ToBuy.csproj",
+        "projectUniqueName": "C:\\Users\\fic\\Desktop\\ToBuy\\ToBuy.csproj",
         "projectName": "ToBuy",
-        "projectPath": "C:\\Users\\Celso\\Desktop\\projeto_back-end\\ToBuy.csproj",
-        "packagesPath": "C:\\Users\\Celso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Celso\\Desktop\\projeto_back-end\\obj\\",
+        "projectPath": "C:\\Users\\fic\\Desktop\\ToBuy\\ToBuy.csproj",
+        "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fic\\Desktop\\ToBuy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Celso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
