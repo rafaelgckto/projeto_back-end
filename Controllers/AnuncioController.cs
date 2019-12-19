@@ -13,7 +13,7 @@ namespace ToBuy.Controllers {
     [Produces ("application/json")]
     public class AnuncioController : ControllerBase {
         AnuncioRepository _adRepository = new AnuncioRepository ();
-        UploadImage img = new UploadImage ();
+        // UploadImage img = new UploadImage ();
 
         /// <summary>
         /// Listagem de todos os anúncios
@@ -174,18 +174,19 @@ namespace ToBuy.Controllers {
         /// <param name="ad">Parâmetro recebe um novo anúncio</param>
         /// <returns>Retorna ao usuário os campos para criar um novo anúncio</returns>
         [HttpPost ("insert")]
+        // [DisableRequestSizeLimit]
         public async Task<ActionResult<Anuncio>> RegisterAd ([FromForm] Anuncio ad) {
             try {
-                var files = Request.Form.Files;
-                if (files.Count < 1) return BadRequest ("Favor informar ao menos uma imagem.");
-                var listaImagens = new List<Imagem> ();
-                foreach (var file in files) {
-                    var imagem = img.Upload (file, "Imagens/ClassificadoImagens");
-                    listaImagens.Add (new Imagem () {
-                        Imagem1 = imagem
-                    });
-                }
-                ad.Imagem = listaImagens;
+                // var files = Request.Form.Files;
+                // if (files.Count < 1) return BadRequest ("Favor informar ao menos uma imagem.");
+                // var listaImagens = new List<Imagem> ();
+                // foreach (var file in files) {
+                //     var imagem = img.Upload (file, "Images/ClassificadoImages");
+                //     listaImagens.Add (new Imagem () {
+                //         Imagem1 = imagem
+                //     });
+                // }
+                // ad.Imagem = listaImagens;
 
                 return await _adRepository.Register (ad);
             } catch (Exception ex) {

@@ -18,6 +18,7 @@ namespace ToBuy.Utils {
                 using (var stream = new FileStream (fullPath, FileMode.Create)) {
                     arquivo.CopyTo (stream);
                 }
+
                 return fullPath;
             } else {
                 return null;

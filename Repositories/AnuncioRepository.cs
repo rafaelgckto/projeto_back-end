@@ -83,6 +83,7 @@ namespace ToBuy.Repositories {
             return await _context.Anuncio
                 .Include (x => x.FkIdConservacaoNavigation)
                 .Include (y => y.FkIdProdutoNavigation)
+                .Include(z => z.Imagem)
                 .ToListAsync ();
         }
 
